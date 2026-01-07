@@ -25,6 +25,14 @@ The design is mobile-first and fully responsive. Product grids adapt from 1 colu
 
 ## Setup & Run
 
+**1. Create `.env` file in the client directory:**
+
+```env
+VITE_API_BASE_URL=http://localhost:3000
+```
+
+**2. Install dependencies and run:**
+
 ```bash
 npm install
 npm run dev
@@ -252,15 +260,6 @@ The app is configured for automatic deployment on Vercel:
 3. Environment variables configured in Vercel dashboard
 4. Build command: `npm run build`
 5. Output directory: `dist`
-
----
-
-## Browser Support
-
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
 
 ---
 

@@ -12,9 +12,20 @@ This server uses **Node.js** with **TypeScript** for type safety, **Express** fo
 
 ## How to Run
 
+**1. Create `.env` file in the server directory:**
+
+```env
+PORT=3000
+NODE_ENV=development
+DATABASE_URL="file:./dev.db"
+```
+
+**2. Install dependencies and run:**
+
 ```bash
 npm install
-npx prisma db seed  # Optional: seed the database
+npx prisma db push      # Initialize database
+npx prisma db seed      # Seed with sample data (optional)
 npm run dev
 ```
 

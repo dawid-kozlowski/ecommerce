@@ -6,8 +6,6 @@ A full-stack e-commerce demo application built with React (TypeScript) and Node.
 
 - **Frontend**: [https://ecommerce-tau-lovat-47.vercel.app/](https://ecommerce-tau-lovat-47.vercel.app/)
 - **Backend API**: [https://ecommerce-api-lu4k.onrender.com](https://ecommerce-api-lu4k.onrender.com)
-- **GitHub Repository**: [https://github.com/dawid-kozlowski/ecommerce](https://github.com/dawid-kozlowski/ecommerce)
-
 
 ## Project Structure
 
@@ -35,6 +33,7 @@ A full-stack e-commerce demo application built with React (TypeScript) and Node.
 ```bash
 cd server
 npm install
+npx prisma db push
 npx prisma db seed  # Optional: seed the database
 npm run dev
 ```

@@ -45,10 +45,8 @@ const ProductListing: React.FC = () => {
             )}
 
             {loading ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {[1, 2, 3, 4].map(n => (
-                        <div key={n} className="bg-white h-96 rounded-xl animate-pulse shadow"></div>
-                    ))}
+                <div className="text-center py-12">
+                    <p className="text-gray-600 text-lg">Loading...</p>
                 </div>
             ) : error ? (
                 <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded shadow-sm">
